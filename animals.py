@@ -5,11 +5,11 @@ from slithering import Garden_Snake, Earthworm, Salamander, Python_Snake, Boa_Sn
 from swimming import Fish, Alligator, Seahorse, Frog, Platypus
 
 #walking🦙
-june = Llama("June","Llama")
-johnny = Capybara("Johnny","Capybara")
-raphael = Tortoise("Raphael","Tortoise")
-wilbur = Pig("Wilbur","Pig")
-ernesto = Ermine("Ernesto","Ermine")
+june = Llama("June","Llama", "morning")
+johnny = Capybara("Johnny","Capybara", "midday")
+raphael = Tortoise("Raphael","Tortoise", "afternoon")
+wilbur = Pig("Wilbur","Pig", "morning")
+ernesto = Ermine("Ernesto","Ermine", "afternoon")
 
 #slithering🐍
 sam = Garden_Snake("Sam", "Garden Snake")  
@@ -26,4 +26,4 @@ fred = Frog("Fred", "Frog")
 pedro = Platypus("Pedro", "Platypus")
 
 
-print(june.name)
+print(f'{wilbur.name} the {wilbur.species} is available to pet during the {wilbur.shift} shift.')
