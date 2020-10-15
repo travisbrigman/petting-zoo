@@ -3,6 +3,7 @@ from datetime import date
 from walking import Llama, Capybara, Tortoise, Pig, Ermine
 from slithering import Garden_Snake, Earthworm, Salamander, Python_Snake, Boa_Snake
 from swimming import Fish, Alligator, Seahorse, Frog, Platypus
+from attractions import PettingZoo, SnakePit, Wetlands
 
 #walking🦙
 june = Llama("June","Llama", "morning","Macaroons")
@@ -25,28 +26,21 @@ cedric = Seahorse("Cedric", "Seahorse", "plankton")
 fred = Frog("Fred", "Frog", "flies")
 pedro = Platypus("Pedro", "Platypus", "gummie bears")
 
+varmint_village = PettingZoo("Varmint Village")
+slither_inn = SnakePit("Slither Inn")
+critter_cove = Wetlands("Critter Cove")
 
-print(f'{wilbur.name} the {wilbur.species} is available to pet during the {wilbur.shift} shift.')
-print(f'{raphael.name} the {raphael.species} is available to pet during the {raphael.shift} shift.')
+varmint_village.add(june)
 
+'''
+for animal in varmint_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 
+for animal in slither_inn.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 
-print(june.feed())
-print(johnny.feed())
-print(raphael.feed())
-print(wilbur.feed())
-print(ernesto.feed())
+for animal in critter_cove.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+'''
 
-print(nemo.feed())
-print(alan.feed())
-print(cedric.feed())
-print(fred.feed())
-print(pedro.feed())
-
-print(sam.feed())
-print(errol.feed())
-print(sal.feed())
-print(pippin.feed())
-print(bruce.feed())
-
-print(sam)
+varmint_village.report

@@ -14,6 +14,7 @@ class Llama():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
+
 class Capybara():
     def __init__(self, name, species, shift, food):
         self.name = name
