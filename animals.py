@@ -6,7 +6,7 @@ from swimming import Fish, Alligator, Seahorse, Frog, Platypus
 from attractions import PettingZoo, SnakePit, Wetlands
 
 #walking🦙
-june = Llama("June","Llama", "morning","Macaroons")
+june = Llama("June","Llama", "morning","Macaroons",123456789)
 johnny = Capybara("Johnny","Capybara", "midday", "pumpkins")
 raphael = Tortoise("Raphael","Tortoise", "afternoon", "pizza")
 wilbur = Pig("Wilbur","Pig", "morning", "slop")
@@ -31,6 +31,8 @@ slither_inn = SnakePit("Slither Inn")
 critter_cove = Wetlands("Critter Cove")
 
 varmint_village.add(june)
+varmint_village.add(johnny)
+varmint_village.add(raphael)
 
 '''
 for animal in varmint_village.animals:
@@ -43,4 +45,5 @@ for animal in critter_cove.animals:
     print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
 '''
 
-varmint_village.report
+print(june.chip_num)
+print(varmint_village.last_critter_added)

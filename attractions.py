@@ -8,16 +8,9 @@ class PettingZoo:
     def add(self, animal):
         self.animals.append(animal)
 
-    def report():
-      print("cool")
-        # for animal in animals:
-        #     print(animal)
-
-
-
-    # @property
-    # def last_critter_added(animals):
-    #     return animals[-1]
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]
 
 
 class SnakePit:
