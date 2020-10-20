@@ -1,9 +1,14 @@
-class Wetlands:
+from .Attraction import Attraction
 
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "If it swims and can be caught, it's in here"
-        self.animals = list()
+class Wetlands(Attraction):
 
-    def add(self, animal):
-        self.animals.append(animal)
+    def __init__(self, name, description):
+        super().__init__(name, description)
+
+    def add_animal(self, animal):
+        try:
+            if animal.swim_speed > -1:
+                self.animals.append(animal)
+                print(f"{animal} now lives in {self.attraction_name}")
+        except AttributeError as ex:
+            print(f'{animal} doesn\'t like to be petted, so please do not put it in the {self.name} attraction.')

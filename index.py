@@ -25,30 +25,30 @@ cedric = Seahorse("Cedric", "Seahorse", "afternoon", "plankton", 555666)
 fred = Frog("Fred", "Frog", "morning", "flies", 789321)
 pedro = Platypus("Pedro", "Platypus", "morning", "gummie bears", 5556666555)
 
-varmint_village = PettingZoo("Varmint Village")
-slither_inn = SnakePit("Slither Inn")
-critter_cove = Wetlands("Critter Cove")
+varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
+slither_inn = SnakePit("Slither Inn", "sleek and slithering creatures all around you")
+critter_cove = Wetlands("Critter Cove", "If it swims and can be caught, it's in here")
 
-varmint_village.add(june)
-varmint_village.add(johnny)
-varmint_village.add(raphael)
+varmint_village.add_animal(june)
+varmint_village.add_animal(johnny)
+varmint_village.add_animal(alan)
 
-slither_inn.add(sam)
-slither_inn.add(errol)
-slither_inn.add(sal)
-slither_inn.add(pippin)
-slither_inn.add(bruce)
+slither_inn.add_animal(sam)
+slither_inn.add_animal(errol)
+slither_inn.add_animal(sal)
+slither_inn.add_animal(pippin)
+slither_inn.add_animal(bruce)
 
-critter_cove.add(nemo)
-critter_cove.add(alan)
-critter_cove.add(cedric)
-critter_cove.add(fred)
-critter_cove.add(pedro)
+critter_cove.add_animal(nemo)
+critter_cove.add_animal(alan)
+critter_cove.add_animal(cedric)
+critter_cove.add_animal(fred)
+critter_cove.add_animal(pedro)
 
 
 
 for animal in varmint_village.animals:
-    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+    print(animal)
 
 for animal in slither_inn.animals:
     print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
